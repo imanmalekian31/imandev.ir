@@ -668,7 +668,7 @@ section {
   z-index: 9994;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.portfolio .portfolio-wrap .portfolio-info h3 {
   font-size: 20px;
   color: #45505b;
   font-weight: 600;
@@ -876,7 +876,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.contact .info h4 {
+.contact .info h3 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
