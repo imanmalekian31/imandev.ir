@@ -1,484 +1,700 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F9HEGWJW39"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F9HEGWJW39"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+      gtag("config", "G-F9HEGWJW39");
+    </script>
 
-    gtag('config', 'G-F9HEGWJW39');
-  </script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Iman Malekian</title>
+    <meta content="Iman Malekian Portfolio" name="description" />
+    <meta
+      content="portfolio, iman, malekian, frontend, developer, engineer"
+      name="keywords"
+    />
 
-  <title>Iman Malekian</title>
-  <meta content="Iman Malekian Portfolio" name="description" />
-  <meta content="portfolio, iman, malekian, frontend, developer, engineer" name="keywords" />
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
 
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
 
-  <link href="assets/css/style.css" rel="stylesheet" />
-</head>
+  <body>
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
 
-<body>
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+    <header id="header" class="d-flex flex-column justify-content-center">
+      <nav id="navbar" class="navbar nav-menu">
+        <ul>
+          <li>
+            <a href="#hero" class="nav-link scrollto active"
+              ><i class="bx bx-home"></i> <span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#about" class="nav-link scrollto"
+              ><i class="bx bx-user"></i> <span>About</span></a
+            >
+          </li>
+          <li>
+            <a href="#resume" class="nav-link scrollto"
+              ><i class="bx bx-file-blank"></i> <span>Resume</span></a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="nav-link scrollto"
+              ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link scrollto"
+              ><i class="bx bx-envelope"></i> <span>Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <header id="header" class="d-flex flex-column justify-content-center">
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li>
-          <a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
-        </li>
-        <li>
-          <a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
-        </li>
-        <li>
-          <a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
-        </li>
-        <li>
-          <a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
-        </li>
-        <li>
-          <a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Iman Malekian</h1>
-      <p>
-        I'm <span class="typed" data-typed-items="Front End Engineer"></span>
-      </p>
-      <div class="social-links">
-        <a href="https://twitter.com/malekianIman" class="twitter" target="_blank" aria-label="twitter"><i
-            class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/iman.malekian.737" class="facebook" target="_blank" aria-label="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/malekianiman" class="instagram" target="_blank" aria-label="instagram"><i
-            class="bx bxl-instagram"></i></a>
-        <a href="https://join.skype.com/invite/lugPXlOVn9VI" class="google-plus" target="_blank"
-          aria-label="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="https://www.linkedin.com/in/iman-malekian-9a4727120/" class="linkedin" target="_blank"
-          aria-label="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <main id="main">
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>About</h2>
-          <p>
-            I am a Front‑end developer with more than 4 years of experience
-            creating and maintaining a reusable code‑base, and I like to
-            contribute to potential open-source projects. I possess a
-            demonstrated academic background in computer science. I am fast at
-            learning new things and eager to find solutions to new problems.
-            Passionate about working on new challenges with new people.
-          </p>
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Iman Malekian</h1>
+        <p>
+          I'm <span class="typed" data-typed-items="Front End Engineer"></span>
+        </p>
+        <div class="social-links">
+          <a
+            href="https://twitter.com/malekianIman"
+            class="twitter"
+            target="_blank"
+            aria-label="twitter"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a
+            href="https://github.com/imanmalekian31"
+            class="github"
+            target="_blank"
+            aria-label="github"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/malekianiman"
+            class="instagram"
+            target="_blank"
+            aria-label="instagram"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://join.skype.com/invite/lugPXlOVn9VI"
+            class="google-plus"
+            target="_blank"
+            aria-label="google-plus"
+            ><i class="bx bxl-skype"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/iman-malekian-9a4727120/"
+            class="linkedin"
+            target="_blank"
+            aria-label="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
         </div>
+      </div>
+    </section>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile.webp" class="img-fluid" alt="Iman Malekian" />
+    <main id="main">
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>About</h2>
+            <p>
+              I am a Front‑end developer with more than 5 years of experience
+              creating and maintaining a reusable code‑base, and I like to
+              contribute to potential open-source projects. I possess a
+              demonstrated academic background in computer science. I am fast at
+              learning new things and eager to find solutions to new problems.
+              Passionate about working on new challenges with new people.
+            </p>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Front End Engineer</h3>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Birthday:</strong> <span>24 Oct 1998</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Phone:</strong> <span>+989129646419</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>City:</strong> <span>Lavasan, Tehran, Iran</span>
-                  </li>
-                </ul>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <img
+                src="assets/img/profile.webp"
+                class="img-fluid"
+                alt="Iman Malekian"
+              />
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+              <h3>Front End Engineer</h3>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Birthday:</strong> <span>24 Oct 1998</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Phone:</strong> <span>+989129646419</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>City:</strong> <span>Tehran, Iran</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                      <span>25</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Degree:</strong> <span>BS, Computer Science</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Email:</strong>
+                      <span>imanmalekian31@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                    <span>24</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Degree:</strong> <span>BS, Computer Science</span>
-                  </li>
-                  <li>
-                    <i class="bi bi-chevron-right"></i>
-                    <strong>Email:</strong>
-                    <span>imanmalekian31@gmail.com</span>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="skills" class="skills section-bg about">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Skills</h2>
-        </div>
-        <div class="content">
-          <ul>
-            <li>
-              <i class="bi bi-chevron-right"></i><strong>Programming: </strong> Javascript, Typescript, Node.JS,
-              Python, JAVA
-            </li>
-            <li>
-              <i class="bi bi-chevron-right"></i><strong>Frameworks: </strong> VueJs, NuxtJs, ReactJs, NextJs,
-              Svelte, Django, Express, MongoDB
-            </li>
-            <li>
-              <i class="bi bi-chevron-right"></i><strong>Tools: </strong> Eslint, Prettier, Git, AWS, Grafana
-            </li>
-            <li>
-              <i class="bi bi-chevron-right"></i><strong>Web: </strong> Html5,
-              Css, Sass, Bootstrap, Tailwind, PostCss, Responsive Design, SEO,
-              PWA
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master ‐ Amirkabir University of Technology</h4>
-              <h5>2021 - 2022</h5>
-              <p><em>Computer Science</em></p>
-              <p>
-                I studied for two semesters in the Algorithm field with a GPA
-                15.5 and then dropped out.
-              </p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor ‐ Amirkabir University of Technology</h4>
-              <h5>2017 ‐ 2021</h5>
-              <p><em>Computer Science</em></p>
-              <p>
-                I graduated in the summer of 2021 with a GPA of 17.39 from
-                <a href="https://aut.ac.ir/en" target="_blank">Amirkabir University of Technology</a>.
-              </p>
-            </div>
+      <section id="skills" class="skills section-bg about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Skills</h2>
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Frontend Developer ‐ Yektanet (Panel)</h4>
-              <h5>Mar 2022 – Ongoing</h5>
-              <p><em>Tehran, Iran</em></p>
-              <ul>
-                <li>
-                  Implemented new design system components (like chart, table,
-                  ...)
-                </li>
-                <li>
-                  Developed Yektanet UI Kit (Yekta UI) with TailwindCss.
-                </li>
-                <li>
-                  Rewriting components with composition API for migration to
-                  Vue 3.
-                </li>
-                <li>Rewrite Ads report page.</li>
-                <li>Code review junior developers.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Javascript SDK Engineer ‐ Yektanet (Script)</h4>
-              <h5>Oct 2021 – Mar 2022</h5>
-              <p><em>Tehran, Iran</em></p>
-              <ul>
-                <li>Learned more about Webpack config for split chunking.</li>
-                <li>
-                  Experienced with Kafka and used it for consuming messages
-                  with Javascript.
-                </li>
-                <li>Worked with MongoDB and Express for creating APIs.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Frontend Developer ‐ Yektanet (Chavosh)</h4>
-              <h5>Feb 2021 – Oct 2021</h5>
-              <p><em>Tehran, Iran</em></p>
-              <ul>
-                <li>Implemented Chavosh panel from scratch with Nuxt.</li>
-                <li>Worked with Design team to implement Chavosh panel.</li>
-                <li>
-                  Implemented a lead gathering script with Parcel and Svelte.
-                </li>
-                <li>
-                  Implemented a price comparison website from scratch and
-                  Implemented SEO points like SSR, canonical links,robot.txt,
-                  sitemap ...
-                </li>
-                <li>Mentored a junior frontend developer.</li>
-                <li>
-                  Participating in the company’s recruitment process, and
-                  taking part in technical interviews and task reviews.
-                </li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Frontend Developer ‐ Yektanet (CRM)</h4>
-              <h5>Oct 2019 – Feb 2021</h5>
-              <p><em>Tehran, Iran</em></p>
-              <ul>
-                <li>Developed numerous features.</li>
-                <li>Designed and implemented CRM Dashboard.</li>
-                <li>Designed and implemented CRM Mobile layout version.</li>
-                <li>
-                  Implemented caching static files and some requests with
-                  Workbox.
-                </li>
-                <li>Implemented component lazy loading.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Frontend Developer Intern ‐ Sanjeman</h4>
-              <h5>Jul 2018 – Sep 2018</h5>
-              <p><em>Tehran, Iran</em></p>
-              <ul>
-                <li>
-                  Implemented responsive web pages with Bootstrap and Jquery.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>
-            I've developed some NPM packages and websites in these years which
-            you can see some of them here
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Package</li>
-              <li data-filter=".filter-web">Web</li>
+          <div class="content">
+            <ul>
+              <li>
+                <i class="bi bi-chevron-right"></i
+                ><strong>Programming: </strong> Javascript, Typescript, Node.JS,
+                Python, JAVA
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i
+                ><strong>Frameworks: </strong> VueJs, NuxtJs, ReactJs, Svelte,
+                Django, Express, MongoDB
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i
+                ><strong>Tools: </strong> Eslint, Prettier, Git, AWS, Grafana
+              </li>
+              <li>
+                <i class="bi bi-chevron-right"></i><strong>Web: </strong> Html5,
+                Css, Sass, Bootstrap, Tailwind, PostCss, Responsive Design, SEO,
+                PWA
+              </li>
             </ul>
           </div>
         </div>
+      </section>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/vue-bottom-navigation.webp" class="img-fluid"
-                alt="Vue Bottom Navigation" />
-              <div class="portfolio-info">
-                <h3>Vue Bottom Navigation</h3>
-                <div class="portfolio-links">
-                  <a href="https://vue-bottom-navigation.netlify.app" target="_blank" title="Vue Bottom Navigation"><i
-                      class="bx bx-link"></i></a>
-                  <a href="https://github.com/imanmalekian31/vue-bottom-navigation" target="_blank"
-                    title="Vue Bottom Navigation"><i class="bx bxl-github"></i></a>
-                </div>
+      <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Resume</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Master ‐ Amirkabir University of Technology</h4>
+                <h5>2021 - 2022</h5>
+                <p><em>Computer Science</em></p>
+                <p>
+                  I studied for two semesters in the Algorithm field with a GPA
+                  15.5 and then dropped out.
+                </p>
+              </div>
+              <div class="resume-item">
+                <h4>Bachelor ‐ Amirkabir University of Technology</h4>
+                <h5>2017 ‐ 2021</h5>
+                <p><em>Computer Science</em></p>
+                <p>
+                  I graduated in the summer of 2021 with a GPA of 17.39 from
+                  <a href="https://aut.ac.ir/en" target="_blank"
+                    >Amirkabir University of Technology</a
+                  >.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Frontend Developer ‐ Yektanet (Panel)</h4>
+                <h5>Mar 2022 – Ongoing</h5>
+                <p><em>Tehran, Iran</em></p>
+                <ul>
+                  <li>
+                    Designed and implemented new components for the Yektanet UI
+                    Kit (Yekta UI), a design system based on TailwindCss
+                  </li>
+                  <li>
+                    Migrated existing components to use the Composition API for
+                    Vue 3 compatibility
+                  </li>
+                  <li>
+                    Wrote end-to-end tests using Cypress to ensure the quality
+                    and functionality of the web application
+                  </li>
+                  <li>
+                    Rewrote the Ads report page to improve the performance and
+                    user experience
+                  </li>
+                  <li>
+                    Conducted code reviews and provided feedback to junior
+                    developers
+                  </li>
+                  <li>
+                    Integrated TypeScript into the project to enhance the code
+                    readability and maintainability
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Javascript SDK Engineer ‐ Yektanet (Script)</h4>
+                <h5>Oct 2021 – Mar 2022</h5>
+                <p><em>Tehran, Iran</em></p>
+                <ul>
+                  <li>
+                    Gained expertise in Webpack configuration for optimizing the
+                    web application performance by splitting chunks
+                  </li>
+                  <li>
+                    Utilized Kafka to consume messages with JavaScript and
+                    implement event-driven architecture
+                  </li>
+                  <li>
+                    Developed APIs using MongoDB and Express to handle data
+                    operations and provide RESTful services
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Frontend Developer ‐ Yektanet (Chavosh)</h4>
+                <h5>Feb 2021 – Oct 2021</h5>
+                <p><em>Tehran, Iran</em></p>
+                <ul>
+                  <li>
+                    Built the Chavosh panel from scratch using Nuxt, a framework
+                    for creating Vue.js applications
+                  </li>
+                  <li>
+                    Collaborated with the design team to implement the Chavosh
+                    panel according to the UI/UX specifications
+                  </li>
+                  <li>
+                    Created a lead gathering script using Parcel and Svelte, two
+                    modern web development tools
+                  </li>
+                  <li>
+                    Developed a price comparison website from scratch and
+                    implemented SEO best practices such as SSR, canonical links,
+                    robot.txt, sitemap, etc
+                  </li>
+                  <li>
+                    Mentored a junior frontend developer and helped them improve
+                    their skills and knowledge
+                  </li>
+                  <li>
+                    Participated in the company’s recruitment process, and
+                    conducted technical interviews and task reviews
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Frontend Developer ‐ Yektanet (CRM)</h4>
+                <h5>Oct 2019 – Feb 2021</h5>
+                <p><em>Tehran, Iran</em></p>
+                <ul>
+                  <li>
+                    Developed numerous features for enhancing the functionality
+                    and usability of the web application
+                  </li>
+                  <li>
+                    Designed and implemented the CRM Dashboard, a user-friendly
+                    interface for managing customer relationships
+                  </li>
+                  <li>
+                    Designed and implemented the CRM Mobile layout version, a
+                    responsive and adaptive design for mobile devices
+                  </li>
+                  <li>
+                    Implemented caching static files and some requests with
+                    Workbox, a library for creating service workers and
+                    improving the web performance
+                  </li>
+                  <li>
+                    Implemented component lazy loading, a technique for reducing
+                    the initial loading time and improving the user experience
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Frontend Developer Intern ‐ Sanjeman</h4>
+                <h5>Jul 2018 – Sep 2018</h5>
+                <p><em>Tehran, Iran</em></p>
+                <ul>
+                  <li>
+                    Implemented responsive web pages using Bootstrap and JQuery,
+                    two popular front-end frameworks for creating dynamic and
+                    interactive web interfaces
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/vue-toy-face.webp" class="img-fluid" alt="Vue Toy Face" />
-              <div class="portfolio-info">
-                <h3>Vue Toy Face</h3>
-                <div class="portfolio-links">
-                  <a href="https://vue-toy-face.vercel.app" target="_blank" title="Vue Toy Face"><i
-                      class="bx bx-link"></i></a>
-                  <a href="https://github.com/imanmalekian31/vue-toy-face" target="_blank" title="Vue Toy Face"><i
-                      class="bx bxl-github"></i></a>
-                </div>
-              </div>
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>
+              I've developed some NPM packages and websites in these years which
+              you can see some of them here
+            </p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-12 d-flex justify-content-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-app">Package</li>
+                <li data-filter=".filter-web">Web</li>
+              </ul>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/vue-radio-button.webp" class="img-fluid" alt="Vue Radio Button" />
-              <div class="portfolio-info">
-                <h3>Vue Radio Button</h3>
-                <div class="portfolio-links">
-                  <a href="https://vue-radio-button.netlify.app" target="_blank" title="Vue Radio Button"><i
-                      class="bx bx-link"></i></a>
-                  <a href="https://github.com/imanmalekian31/vue-radio-button" target="_blank"
-                    title="Vue Radio Button"><i class="bx bxl-github"></i></a>
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/vue-bottom-navigation.webp"
+                  class="img-fluid"
+                  alt="Vue Bottom Navigation"
+                />
+                <div class="portfolio-info">
+                  <h3>Vue Bottom Navigation</h3>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://vue-bottom-navigation.netlify.app"
+                      target="_blank"
+                      title="Vue Bottom Navigation"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                    <a
+                      href="https://github.com/imanmalekian31/vue-bottom-navigation"
+                      target="_blank"
+                      title="Vue Bottom Navigation"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/yekta-tailwind.webp" class="img-fluid" alt="Yekta Tailwind" />
-              <div class="portfolio-info">
-                <h3>Yekta Tailwind</h3>
-                <div class="portfolio-links">
-                  <a href="https://yekta-tailwind.vercel.app" target="_blank" title="Yekta Tailwind"><i
-                      class="bx bx-link"></i></a>
-                  <a href="https://www.npmjs.com/package/yekta-tailwind-test" target="_blank" title="Yekta Tailwind"><i
-                      class="bx bxl-github"></i></a>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/vue-toy-face.webp"
+                  class="img-fluid"
+                  alt="Vue Toy Face"
+                />
+                <div class="portfolio-info">
+                  <h3>Vue Toy Face</h3>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://vue-toy-face.vercel.app"
+                      target="_blank"
+                      title="Vue Toy Face"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                    <a
+                      href="https://github.com/imanmalekian31/vue-toy-face"
+                      target="_blank"
+                      title="Vue Toy Face"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/crm.webp" class="img-fluid" alt="Yektanet CRM" />
-              <div class="portfolio-info">
-                <h3>Yektanet CRM</h3>
-                <div class="portfolio-links">
-                  <a href="https://yektanet.com" target="_blank" title="Yektanet CRM"><i class="bx bx-link"></i></a>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/vue-radio-button.webp"
+                  class="img-fluid"
+                  alt="Vue Radio Button"
+                />
+                <div class="portfolio-info">
+                  <h3>Vue Radio Button</h3>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://vue-radio-button.netlify.app"
+                      target="_blank"
+                      title="Vue Radio Button"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                    <a
+                      href="https://github.com/imanmalekian31/vue-radio-button"
+                      target="_blank"
+                      title="Vue Radio Button"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/chavosh.webp" class="img-fluid" alt="Chavosh" />
-              <div class="portfolio-info">
-                <h3>Chavosh</h3>
-                <div class="portfolio-links">
-                  <a href="https://chavosh.org" target="_blank" title="Chavosh"><i class="bx bx-link"></i></a>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/yekta-tailwind.webp"
+                  class="img-fluid"
+                  alt="Yekta Tailwind"
+                />
+                <div class="portfolio-info">
+                  <h3>Yekta Tailwind</h3>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://yekta-tailwind.vercel.app"
+                      target="_blank"
+                      title="Yekta Tailwind"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                    <a
+                      href="https://www.npmjs.com/package/yekta-tailwind-test"
+                      target="_blank"
+                      title="Yekta Tailwind"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/daisyui.webp" class="img-fluid" alt="Daisy UI" />
-              <div class="portfolio-info">
-                <h3>Daisy UI</h3>
-                <div class="portfolio-links">
-                  <a href="https://daisyui.com" target="_blank" title="Daisy UI"><i class="bx bx-link"></i></a>
-                  <a href="https://github.com/saadeghi/daisyui" target="_blank" title="Daisy UI"><i
-                      class="bx bxl-github"></i></a>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/crm.webp"
+                  class="img-fluid"
+                  alt="Yektanet CRM"
+                />
+                <div class="portfolio-info">
+                  <h3>Yektanet CRM</h3>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://yektanet.com"
+                      target="_blank"
+                      title="Yektanet CRM"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/chavosh.webp"
+                  class="img-fluid"
+                  alt="Chavosh"
+                />
+                <div class="portfolio-info">
+                  <h3>Chavosh</h3>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://chavosh.org"
+                      target="_blank"
+                      title="Chavosh"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <img
+                  src="assets/img/portfolio/daisyui.webp"
+                  class="img-fluid"
+                  alt="Daisy UI"
+                />
+                <div class="portfolio-info">
+                  <h3>Daisy UI</h3>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://daisyui.com"
+                      target="_blank"
+                      title="Daisy UI"
+                      ><i class="bx bx-link"></i
+                    ></a>
+                    <a
+                      href="https://github.com/saadeghi/daisyui"
+                      target="_blank"
+                      title="Daisy UI"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Contact</h2>
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+
+          <div class="row mt-1">
+            <div class="col-md-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Location:</h3>
+                  <p>Tehran, Iran</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email:</h3>
+                  <p>imanmalekian31@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="info">
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h3>Call:</h3>
+                  <p>+98 912 964 6419</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <div class="row mt-1">
-          <div class="col-md-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h3>Location:</h3>
-                <p>Lavasan, Tehran, Iran</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="info">
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h3>Email:</h3>
-                <p>imanmalekian31@gmail.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="info">
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h3>Call:</h3>
-                <p>+98 912 964 6419</p>
-              </div>
-            </div>
-          </div>
+    <footer id="footer">
+      <div class="container">
+        <h3>Iman Malekian</h3>
+        <p>I'm a Front end Engineer.</p>
+        <div class="social-links">
+          <a
+            href="https://twitter.com/malekianIman"
+            class="twitter"
+            target="_blank"
+            aria-label="twitter"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a
+            href="https://github.com/imanmalekian31"
+            class="github"
+            target="_blank"
+            aria-label="github"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/malekianiman"
+            class="instagram"
+            target="_blank"
+            aria-label="instagram"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            href="https://join.skype.com/invite/lugPXlOVn9VI"
+            class="google-plus"
+            target="_blank"
+            aria-label="google-plus"
+            ><i class="bx bxl-skype"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/iman-malekian-9a4727120/"
+            class="linkedin"
+            target="_blank"
+            aria-label="linkedin"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer id="footer">
-    <div class="container">
-      <h3>Iman Malekian</h3>
-      <p>I'm a Front end Engineer.</p>
-      <div class="social-links">
-        <a href="https://twitter.com/malekianIman" class="twitter" target="_blank" aria-label="twitter"><i
-            class="bx bxl-twitter"></i></a>
-        <a href="https://www.facebook.com/iman.malekian.737" class="facebook" target="_blank" aria-label="facebook"><i
-            class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/malekianiman" class="instagram" target="_blank" aria-label="instagram"><i
-            class="bx bxl-instagram"></i></a>
-        <a href="https://join.skype.com/invite/lugPXlOVn9VI" class="google-plus" target="_blank"
-          aria-label="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="https://www.linkedin.com/in/iman-malekian-9a4727120/" class="linkedin" target="_blank"
-          aria-label="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
-    </div>
-  </footer>
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <script src="assets/js/main.js"></script>
-</body>
-
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
